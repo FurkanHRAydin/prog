@@ -12,7 +12,7 @@
 
 angestellter ang(char name[], int n, float m) {
     angestellter a;
-    strcpy(a.name, name );
+    strcpy(a.name, name);
     a.personalnummer =n;
     a.gehalt=m;
     return a;
@@ -45,7 +45,7 @@ int main(void) {
     arr[0]=ang("Furkan",1,1000);
     arr[1]=ang("Deti",2,2000);
     arr[2]=ang("Schehat",3,3000);
-    arr[3]=ang("Meier",4,4000);
+    arr[3]=ang("Aland",4,4000);
     arr[4]=ang("Eitan",5,-2000); 
 
     binaer_speichern(arr, 5);
