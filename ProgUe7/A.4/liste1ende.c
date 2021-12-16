@@ -112,7 +112,7 @@ struct knoten* entfernen(struct knoten* *kopfref, struct knoten* *enderef, struc
         return auszufueg;
     }
 
-    vor_auszufueg = *kopfref;
+    vor_auszufueg = kopfref; //hier 
     while (vor_auszufueg->next!=auszufueg) {
 
         if (vor_auszufueg->next == NULL) return NULL; /* nicht gefunden */

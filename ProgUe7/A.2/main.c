@@ -26,15 +26,14 @@ angestellter ang(char name[], int n, float m) {
  }
 
  void binaer_laden_und_ausgeben(void) {
-    int* a;
-    int laenge, i;
+    int laenge = 5;
     FILE* f = fopen("angestellte.dat", "rb");
     fread(&laenge, sizeof(laenge), 1, f);
     angestellter *ang = malloc(laenge * sizeof(angestellter));
     fread(ang, sizeof(angestellter), laenge, f);
     fclose(f);
 
-    for (i = 0; i < laenge; i++) {
+    for (int i = 0; i < laenge; i++) {
         printf("%s %d %f",ang[i].name, ang[i].personalnummer, ang[i].gehalt);
     }
  }
